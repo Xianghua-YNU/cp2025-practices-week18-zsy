@@ -44,7 +44,7 @@ def visualize_electron_cloud(x, y, z):
     ax.set_xlabel('X (nm)')
     ax.set_ylabel('Y (nm)')
     ax.set_zlabel('Z (nm)')
-    ax.set_title('氢原子基态电子云分布', fontsize=14)
+    ax.set_title('Distribution of the electron cloud in the ground state of a hydrogen atom', fontsize=14)
     
     # 设置坐标轴范围
     ax.set_xlim(-r0, r0)
@@ -52,6 +52,7 @@ def visualize_electron_cloud(x, y, z):
     ax.set_zlim(-r0, r0)
     
     plt.show()
+    plt.savefig('Distribution of the electron cloud in the ground state of a hydrogen atom')
 
 # 执行模拟和可视化
 x, y, z = simulate_electron_cloud(n_points)
